@@ -1,37 +1,34 @@
-// Código do funcionamento básico do sensor ultrassônico com resposta serial da distância.
+// Código paralelo do projeto
+// Descrição: Código do funcionamento básico do sensor ultrassônico com resposta serial da distância.
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-int trigPin = 12;
-int echoPin = 13;
+int trigPin = 12;                         // Pino digital 12 = Trigger (Sensor Ultrassônico)
+int echoPin = 13;                         // Pino digital 13 = Echo (Sensor Ultrassônico)
 
 
 void setup() {
-Serial.begin (9600);
-pinMode(trigPin, OUTPUT);
-pinMode(echoPin, INPUT);
-
+Serial.begin (9600); 
+pinMode(trigPin, OUTPUT);                 // Trigger = Saída do ultrassom (emissão)
+pinMode(echoPin, INPUT);                  // Echo = Entrada do ultrassom (detecção)
 }
 
 void loop() {
-long duration, distance;
-// Configura o pino 12 com um pulso baixo "LOW" ou desligado ou ainda 0
-digitalWrite(trigPin, LOW);
-delayMicroseconds(2); // Aguarda 2 microssegundos
+long duration, distance;                  // Define as variáveis "long" de distância e duração (tempo)
+  
+digitalWrite(trigPin, LOW);               // Configura o pino 12 com um pulso baixo "LOW" ou desligado ou ainda 0
+delayMicroseconds(2);                     // Aguarda 2 microssegundos
 
-// Configura o pino 12 com pulso alto "HIGH" ou ligado ou ainda 1
-digitalWrite(trigPin, HIGH);
-delayMicroseconds(10); // Aguarda 10 microssegundos
-// Configura o pino 12 com pulso baixo novamente
-digitalWrite(trigPin, LOW);
-// PulseIn lê o tempo entre a chamada e o pino entrar em High
-duration = pulseIn(echoPin, HIGH);
+digitalWrite(trigPin, HIGH);              // Configura o pino 12 com pulso alto "HIGH" ou ligado ou ainda 1
+delayMicroseconds(10);                    // Aguarda 10 microssegundos
+  
+digitalWrite(trigPin, LOW);               // Configura o pino 12 com pulso baixo novamente
+duration = pulseIn(echoPin, HIGH);        // PulseIn lê o tempo entre a chamada e o pino entrar em HIGH
 
-/*Esse calculo é baseado em s = v . t, lembrando que o tempo vem dobrado
-porque é o tempo de ida e volta do ultrassom */
-
+// O calculo é baseado em S = V * t, lembrando que o tempo vem dobrado porque é de ida e volta do ultrassom
 distance = ((duration/2) / 29.1);
 
-Serial.print(distance);
+Serial.print(distance);                  // Escreve a distância percorrida em centímetros
 Serial.println(" Cm");
 
-delay(500);
+delay(500);                              // Aguarda 500ms para o próximo loop
 }
