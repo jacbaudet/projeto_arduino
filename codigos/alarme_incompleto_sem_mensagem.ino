@@ -20,7 +20,6 @@ void setup() {
 
 void loop() {
   long duration, distance;
-  const estado = FALSE
   // Configura o pino 12 com um pulso baixo "LOW" ou desligado ou ainda 0
   digitalWrite(trigPin, LOW);
   delayMicroseconds(10);
