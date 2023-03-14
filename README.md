@@ -40,6 +40,7 @@ Houve uma discussão sobre a função do projeto e foi alterada de um "alarme de
 
 Anteriormente foi discutido sobre o uso do Módulo Ethernet, mas sem um direcionamento de onde seria enviada a notificação de alerta. Na aula foi decidido criar um bot no Telegram para que o Arduino conseguisse se comunicar diretamente com ele e enviar continuamente mensagens de notificação sobre a proximidade de uma pessoa ou não. As referências utilizadas para o estudo desses 2 assuntos foram as documentações das bibliotecas Ethernet [^4] e Universal Telegram Bot [^5], além de projetos  prontos de aplicação como um exemplo do Laboratório Remoto da UFSCar de um Módulo Ethernet com Arduino [^3], com criação de um Server [^6] e de um ESP8266 com envio de notificação para o Telegram [^7]. Também foi encontrado um vídeo muito útil sobre o código do Módulo Ethernet [^1].
 
+Por fim, começamos a desenvolver o código que integrasse tanto o sensoriamento como a comunicação com o Telegram ([Código 3](codigos/alarme_ver_3.ino)), com sua conclusão esperada para a próxima aula.
 
 #### :small_blue_diamond: Reunião 4 (21/03) - Final
 
