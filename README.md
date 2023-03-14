@@ -33,6 +33,17 @@ Considerando os materiais propostos anteriormente para o desenvolvimento do proj
 
 No entanto, foi considerado desenvolver uma parte de comunicação no projeto em que, ao acionar o sistema de segurança, fosse possível enviar uma mensagem de alerta para o cliente. Há dispositivos em sala de aula que permita fazer isso, com o Módulo Ethernet, sendo necessário apenas estudar a programação necessária para implementação.
 
+#### :small_blue_diamond: Reunião 3 (14/03)
+Durante a aula foi um sucesso colocar em prática os códigos que foram montados durante a semana, sem considerar a parte de comunicação do Módulo Ethernet. O sensor ultrassônico, ao medir uma certa distância definida em código, ativava o LED e o buzzer apenas durante o momento em que a distância fosse menor. Houve uma discussão sobre a função do projeto e foi alterada de um "alarme de passagem", que apenas detectasse a passagem e ativasse um alarme, pra um "alarme de aproximação" que detecta continuamente se uma pessoa está se aproximandoa partir de uma distância especificada. A aplicação será em proteger um notebook, ativando o sistema caso alguém se aproxime dele.
+
+Anteriormente foi discutido sobre o uso do Módulo Ethernet, mas sem um direcionamento de onde seria enviada a notificação de alerta. Na aula foi decidido criar um bot no Telegram para que o Arduino conseguisse se comunicar diretamente com ele e enviar continuamente mensagens de notificação sobre a proximidade de uma pessoa ou não. 
+
+[Código teste](codigos/ver_3.ino)
+
+
+#### :small_blue_diamond: Reunião 4 (21/03) - Final
+
+
 ### :link: Referências
 [^A]: [Datasheet Arduino](https://docs.arduino.cc/hardware/uno-rev3)
 [^U]: [Datasheet Sensor Ultrassônico](https://d229kd5ey79jzj.cloudfront.net/620/HCSR04.pdf)
@@ -40,12 +51,10 @@ No entanto, foi considerado desenvolver uma parte de comunicação no projeto em
 [^3]: [Informações Módulo MP3](https://www.usinainfo.com.br/mp3-arduino/modulo-mp3-arduino-dfplayer-mini-5187.html)
 [^F]: [Informações Mini Alto-falante](https://www.usinainfo.com.br/mini-alto-falante/mini-alto-falante-5w-6-ohms-78mm-para-projetos-yd78-3421.html)
 [^P]: [PlatformIO](https://docs.platformio.org/en/latest/)
-
-Referências pra organizar depois:
-https://www.youtube.com/watch?v=bzEVvzppvvo&ab_channel=misperry
-https://www.eletruscomp.com.br/post/projeto-15-sensor-ultrasonico-basico/
-https://vlab.dc.ufscar.br/examples/arduino_uno/web.txt
-https://reference.arduino.cc/reference/en/libraries/ethernet/
-https://blogmasterwalkershop.com.br/arduino/como-usar-com-arduino-modulo-ethernet-enc28j60-web-server
-https://www.arduino.cc/reference/en/libraries/universaltelegrambot/
-https://randomnerdtutorials.com/telegram-esp8266-nodemcu-motion-detection-arduino/
+[^1]: [Vídeo: "Adding Wired Ethernet to Arduino"](https://www.youtube.com/watch?v=bzEVvzppvvo&ab_channel=misperry)
+[^2]: [Projeto básico de um Sensor Ultrassônico](https://www.eletruscomp.com.br/post/projeto-15-sensor-ultrasonico-basico/)
+[^3]: [Exemplo de uso do Módulo Ethernet com Arduino (Lab. Remoto UFSCar)](https://vlab.dc.ufscar.br/examples/arduino_uno/web.txt)
+[^4]: [Documentação da biblioteca Ethernet](https://reference.arduino.cc/reference/en/libraries/ethernet/)
+[^5]: [Documentação da biblioteca Universal Telegram Bot](https://www.arduino.cc/reference/en/libraries/universaltelegrambot/)
+[^6]: [Projeto de Arduino com Módulo Ethernet (Server)](https://blogmasterwalkershop.com.br/arduino/como-usar-com-arduino-modulo-ethernet-enc28j60-web-server)
+[^7]: [Projeto de ESP8266 com envio de notificação para o Telegram](https://randomnerdtutorials.com/telegram-esp8266-nodemcu-motion-detection-arduino/)
