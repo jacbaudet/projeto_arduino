@@ -26,10 +26,10 @@ digitalWrite(trigPin, LOW);               // Configura o pino 12 com pulso baixo
 duration = pulseIn(echoPin, HIGH);        // PulseIn lê o tempo entre a chamada e o pino entrar em HIGH
 
 // O calculo é baseado em S = V * t, lembrando que o tempo vem dobrado porque é de ida e volta do ultrassom
-distance = ((duration/2) / 29.1);
+distance = ((duration/2)*0.034029);
 
 Serial.print(distance);                  // Escreve a distância percorrida em centímetros
-Serial.println(" Cm");
+Serial.println(" cm");
 
 delay(500);                              // Aguarda 500ms para o próximo loop
 }
