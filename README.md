@@ -46,4 +46,5 @@ https://www.youtube.com/watch?v=bzEVvzppvvo&ab_channel=misperry
 https://www.eletruscomp.com.br/post/projeto-15-sensor-ultrasonico-basico/
 https://vlab.dc.ufscar.br/examples/arduino_uno/web.txt
 https://reference.arduino.cc/reference/en/libraries/ethernet/
+https://blogmasterwalkershop.com.br/arduino/como-usar-com-arduino-modulo-ethernet-enc28j60-web-server
 
