@@ -3,11 +3,11 @@
 // Necessário implementar isso e envio de mensagem.
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-#include <Arduino.h>
+// #include <Arduino.h>                         // Apenas para o uso no PlataformIO
 
 int led = 6;                                 // Porta digital D12 é definido como o Led
 int buzzer = 5;                              // Porta digital D10 é definido como o Buzzer
-// int sensor = 0;                               // Porta analógica A0 é definida como Sensor
+// int sensor = 0;                              // Porta analógica A0 é definida como Sensor
 int trigPin = 12;
 int echoPin = 13;
 
