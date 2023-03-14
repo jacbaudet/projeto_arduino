@@ -45,4 +45,5 @@ Referências pra organizar depois:
 https://www.youtube.com/watch?v=bzEVvzppvvo&ab_channel=misperry
 https://www.eletruscomp.com.br/post/projeto-15-sensor-ultrasonico-basico/
 https://vlab.dc.ufscar.br/examples/arduino_uno/web.txt
+https://reference.arduino.cc/reference/en/libraries/ethernet/
 
