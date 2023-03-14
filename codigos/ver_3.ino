@@ -19,7 +19,7 @@ EthernetClient client;
 
 // Configuração do Telegram Bot
 const char* token = "5979365076:AAGWnYd2gprJYNIIut89gJnzowKzRkjAIXQ";
-const int chat_id = 1028002612;
+const int chat_id = seu-id;
 UniversalTelegramBot bot(token, client);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
