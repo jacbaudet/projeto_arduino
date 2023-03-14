@@ -1,7 +1,7 @@
-// Projeto 15 - Sensor ultrasônico básico
+// Código do funcionamento básico do sensor ultrassônico com resposta serial da distância.
 
-#define trigPin 12
-#define echoPin 13
+int trigPin = 12;
+int echoPin = 13;
 
 
 void setup() {
