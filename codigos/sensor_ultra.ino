@@ -1,6 +1,7 @@
 // Código paralelo do projeto
 // Descrição: Código do funcionamento básico do sensor ultrassônico com resposta serial da distância.
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// #include <Arduino.h>                     // Para usar no PlatformIO       
 
 int trigPin = 12;                         // Pino digital 12 = Trigger (Sensor Ultrassônico)
 int echoPin = 13;                         // Pino digital 13 = Echo (Sensor Ultrassônico)
