@@ -1,3 +1,6 @@
+// O código ativa o buzzer e o LED mas não mantém eles ativados após desativar o sensor ultrassônico.
+// Necessário implementar isso e envio de mensagem.
+
 #include <Arduino.h>
 
 int led = 6;                                 // Porta digital D12 é definido como o Led
