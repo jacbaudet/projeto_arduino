@@ -2,7 +2,7 @@
 // Descrição: Código básico do funcionamento de um alarme, com sensoreamento de um sensor infravermelho e 
 // ativação de um buzzer e um LED quando o sensor estabelece uma distância específica.
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-#include <Arduino.h>
+// #include <Arduino.h>                         // Apenas ao utilizar o PlataformIO
 
 int led = 12;                                 // Porta digital D12 é definido como o Led
 int buzzer = 10;                              // Porta digital D10 é definido como o Buzzer
