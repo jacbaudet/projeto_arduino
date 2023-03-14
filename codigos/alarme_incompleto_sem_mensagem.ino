@@ -1,5 +1,7 @@
-// O código ativa o buzzer e o LED mas não mantém eles ativados após desativar o sensor ultrassônico.
+// 2ª versão do código do projeto
+// Descrição: O código ativa o buzzer e o LED mas não mantém eles ativados após desativar o sensor ultrassônico.
 // Necessário implementar isso e envio de mensagem.
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 #include <Arduino.h>
 
