@@ -40,3 +40,9 @@ No entanto, foi considerado desenvolver uma parte de comunicação no projeto em
 [^3]: [Informações Módulo MP3](https://www.usinainfo.com.br/mp3-arduino/modulo-mp3-arduino-dfplayer-mini-5187.html)
 [^F]: [Informações Mini Alto-falante](https://www.usinainfo.com.br/mini-alto-falante/mini-alto-falante-5w-6-ohms-78mm-para-projetos-yd78-3421.html)
 [^P]: [PlatformIO](https://docs.platformio.org/en/latest/)
+
+Referências pra organizar depois:
+https://www.youtube.com/watch?v=bzEVvzppvvo&ab_channel=misperry
+https://www.eletruscomp.com.br/post/projeto-15-sensor-ultrasonico-basico/
+https://vlab.dc.ufscar.br/examples/arduino_uno/web.txt
+
