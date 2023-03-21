@@ -37,15 +37,22 @@ void loop() {
 
   distance = ((duration/2) / 29.1);
 
-  Serial.print(distance);
-  Serial.println(" cm");
 
-  delay(50);
 
   // int ir = analogRead(sensor);                // Leitura do sensor
   if(distance < 30) {                         // Se o valor for menor que 150 o Led e o Buzzer são ativados (150 = distância válida do sensor)
     digitalWrite(led, HIGH);                  // Led liga
     digitalWrite(buzzer, HIGH);               // Buzzer liga
+    Serial.print(distance);
+    Serial.println(" cm");
+
+    delay(1000);
+    Serial.read(resposta);
+    if(resposta == 'Ok' || resposta == 'ok' || resposta == 'OK'){
+      digitalWrite(led, LOW);                   // Led desliga
+      digitalWrite(buzzer, LOW);                // Buzzer desliga
+      return;
+    }
   }
   else {                                      // Se o valor não diminuir ou voltar a 150, ambos são desativados
     digitalWrite(led, LOW);                   // Led desliga
