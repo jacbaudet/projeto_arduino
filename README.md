@@ -43,6 +43,7 @@ Anteriormente foi discutido sobre o uso do Módulo Ethernet, mas sem um direcion
 Por fim, começamos a desenvolver o código que integrasse tanto o sensoriamento como a comunicação com o Telegram ([Código 3](codigos/alarme_ver_3.ino)), com sua conclusão esperada para a próxima aula.
 
 #### :small_blue_diamond: Reunião 4 (21/03) - Final
+Escrever mudanças da última aula e desenvolvimento final do projeto.
 
 
 ### :link: Referências
