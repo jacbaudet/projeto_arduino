@@ -43,7 +43,8 @@ Anteriormente foi discutido sobre o uso do Módulo Ethernet, mas sem um direcion
 Por fim, começamos a desenvolver o código que integrasse tanto o sensoriamento como a comunicação com o Telegram ([Código 3](codigos/alarme_ver_3.ino)), com sua conclusão esperada para a próxima aula.
 
 #### :small_blue_diamond: Reunião 4 (21/03) - Final
-Escrever mudanças da última aula e desenvolvimento final do projeto.
+No decorrer da Aula tivermos que abandonar a ideia de integrar com o Telegram e o bot, por problemas técnicos.
+Com a ajuda do professor foi tentado utilizar o modulo ethernet para conectar com a internet e com um server online tentar controlar o buzzer e o alerta de aproximação, mas por questão de tempo não foi possível explorar essa ideia durante a aula, preferindo então manter o mais básico e fazer um sensor de alerta que desliga ao digitar "OK"
 
 #### :small_blue_diamond: Vídeo do resultado
 https://drive.google.com/file/d/1lMZVoae3Keq8AVI52L1lQFjfNHW5AP4c/view?usp=share_link
