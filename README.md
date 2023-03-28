@@ -45,6 +45,8 @@ Por fim, começamos a desenvolver o código que integrasse tanto o sensoriamento
 #### :small_blue_diamond: Reunião 4 (21/03) - Final
 Escrever mudanças da última aula e desenvolvimento final do projeto.
 
+#### :small blue_diamond: Vídeo do resultado
+https://drive.google.com/file/d/1lMZVoae3Keq8AVI52L1lQFjfNHW5AP4c/view?usp=share_link
 
 ### :link: Referências
 [^A]: [Datasheet Arduino](https://docs.arduino.cc/hardware/uno-rev3)
